@@ -1,0 +1,17 @@
+{
+    "name": "biohazard/laravel-schedule",
+    "description": "Laravel schedule calling multiple commands",
+    "keywords": ["laravel schedule", "laravel", "schedule", "schedule commands", "laravel schedule commands", "laravel schedule commands", "laravel schedule multiple commands"],
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Biohazard\\": "/"
+        }
+    },
+    "authors": [
+        {
+            "name": "biohazardhome",
+            "email": "biohazardhome@gmail.com"
+        }
+    ],
+}
