@@ -1,7 +1,11 @@
 # Laravel schedule calling multiple commands
+```
+composer require biohazard/laravel-schedule
+```
+
 
 App\Console\Kernel.php
-```
+```php
 <?php
 
 ...
