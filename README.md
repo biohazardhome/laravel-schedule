@@ -1,5 +1,5 @@
 # Laravel schedule calling multiple commands
-```
+```bash
 composer require biohazard/laravel-schedule
 ```
 

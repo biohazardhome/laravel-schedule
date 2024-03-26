@@ -28,4 +28,17 @@ class Schedule extends ScheduleBase {
 
         return new Events($events);
     }
+
+    public function jobs(...$jobs) {
+
+        $events = [];
+
+        foreach ($jobs as $job) {
+            $event = $this->job($job);
+                
+            $events[] = $event;
+        }
+
+        return new Events($events);
+    }
 }
