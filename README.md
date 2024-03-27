@@ -29,7 +29,15 @@ class Kernel extends ConsoleKernel
             })->onFailure(function (Stringable $output) {
                 echo 'Schedule task output failured '. $output;
             })
-            ->dailyAt('21:09')
+            ->dailyAt('20:00')
+            ->run();
+
+        $schedule->jobs(
+            new Job1,
+            new Job2,
+            new Job3,
+        )->name('Name')
+            ->dailyAt('21:00')
             ->run();
     }
 
