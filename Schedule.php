@@ -17,28 +17,12 @@ class Schedule extends ScheduleBase {
     }
 
     public function commands(...$commands) {
-
-        $events = [];
-
-        foreach ($commands as $command) {
-            $event = $this->command($command);
-                
-            $events[] = $event;
-        }
-
-        return new Events($events);
+        return groupChains(...$commands)
+            ->wrap(fn ($command) => $this->command($command));
     }
 
     public function jobs(...$jobs) {
-
-        $events = [];
-
-        foreach ($jobs as $job) {
-            $event = $this->job($job);
-                
-            $events[] = $event;
-        }
-
-        return new Events($events);
+        return groupChains(...$jobs)
+            ->wrap(fn ($job) => $this->job($job));
     }
 }

@@ -13,5 +13,8 @@
             "name": "biohazardhome",
             "email": "biohazardhome@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "biohazard/group-chains": "dev-master"
+    }
 }
