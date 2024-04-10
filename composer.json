@@ -15,6 +15,6 @@
         }
     ],
     "require": {
-        "biohazard/group-chains": "dev-master"
+        "biohazard/group-chains": "0.0.1"
     }
 }
